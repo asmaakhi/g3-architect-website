@@ -72,7 +72,7 @@ cursor: pointer;
     header{
         padding: 20px;
     }
-    nav{
+    nav, .teams-container{
         flex-direction: column;
     }
     
@@ -84,4 +84,46 @@ cursor: pointer;
     nav{
     flex-direction: column;
     }
+}
+main{
+    max-width: 1440;
+    margin: 0 auto;
+}
+.teams-container{
+    display: flex;
+    align-items: center;
+}
+.teams-img-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+.teams-content{
+    padding-left: 70px;
+    padding-right: 70px;
+}
+.quick-list{
+    color: var(--Dark-03, #727272);
+
+font-family: Work Sans;
+font-size: 45px;
+font-weight: 500;
+
+
+}
+.for-our{
+    color: var(--Dark-01, #131313);
+font-family: Work Sans;
+font-size: 45px;
+
+font-weight: 700;
+
+}
+.Features{
+    color: #FF900E;
+font-family: Work Sans;
+font-size: 45px;
+
+font-weight: 700;
+
 }
