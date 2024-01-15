@@ -185,19 +185,101 @@ font-size: 16px;
 .spomsors-img-container img{
     width: 165px;
 }
+/*feature section styles*/
+.Feature{
+    display: flex;
+    margin-top: 100px;
+    gap: 150px;
+}
+.features-content{
+    color: var(--Dark-01, #131313);
+
+font-size: 45px;
+font-weight: 700;
+
+}
+.heading{
+    color: var(--Dark-01, #131313);
+font-size: 20px;
+font-weight: 600;
+}
+.feature-description{
+    color: var(--Dark-03, #727272);
+
+  font-size: 16px;
+
+}
+.features-content  .card{
+    padding: 30px;
+    margin-bottom:20px ;
+    border-radius: 8px;
+background: #FFF;
+
+box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+
+}
+.feature-img img{
+    width: 708px;
+height: 90%;
+margin-left: 60px;
+}
+.Feature .features-title{
+    border-left: 5px solid #FF900E;
+    padding-left: 20px;
+}
+.ten-img{
+    border-radius: 8px;
+background: #FF900E;
+color: #FFF;
+width: 342px;
+padding: 40px;
+text-align: center;
+position: relative;
+bottom: 140px;
+
+}
+.ten-img h2{
+    font-size: 64px;
+    margin: 0;
+}
+.ten-img p{
+    font-size: 24px;
+}
+.footer{
+    width: 1350px;
+height: 80px;
+border-radius: 8px;
+background: #FFF4E7;
+text-align: center;
+margin-left: 100px;
+}
+.footer-discreption{
+    padding-top: 30px;
+    color: var(--Dark-02, #424242);
+font-size: 20px;
+}
 
 /*responsive styles*/
 @media screen and (max-width: 576px) {
     header{
         padding: 20px;
     }
-    nav, .teams-container, .facts-card-container, .spomsors-img-container {
+    nav, .teams-container, .facts-card-container, .spomsors-img-container, .Feature {
         flex-direction: column;
     }
     .facts-card-container{
         padding-left: 20px;
         padding-right: 20px;
         gap: 10px;
+    }
+    .feature-img img{
+        width: 100%;
+        margin-left: 0;
+
+    }
+    .ten-img{
+        width: 82%;
+        margin-left: 0;
     }
     .teams-container{
         flex-direction: column-reverse;
@@ -206,13 +288,21 @@ font-size: 16px;
     .teams-img-container{
         grid-template-columns: repeat(1, 1fr);
     }
+    .footer{
+        width: 350px;
+        padding: 0;
+    
+    }
+    .footer-discreption{
+       font-size: 13px;
+    }
     
 }
 @media screen and (min-width: 577px) and (max-width: 960px){
     header{
     padding: 40px;
     }
-    nav, .spomsors-img-container{
+    nav, .spomsors-img-container, .Feature{
     flex-direction: column;
     }
     .teams-container{
@@ -223,4 +313,17 @@ font-size: 16px;
     .facts-card-container{
 
         gap: 5px;
+}
+.feature-img img{
+    width: 100%;
+    margin-left: 0;
+}
+.footer{
+    width: 650px;
+    padding: 0;
+
+}
+.footer-discreption{
+   font-size: 17px;
+}
 }
